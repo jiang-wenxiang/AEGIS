@@ -1,0 +1,24 @@
+{
+  "model_name": "MaskWM",
+  "project_name": "256x256",
+  "only_decoder": false,
+  "epoch_number": 101,
+  "batch_size": 8,
+  "train_continue": false,
+  "train_continue_path": "/",
+  "train_continue_epoch": 0,
+  "dataset_path": "datasets/coco_s1",
+  "save_images_number": 4,
+  "discriminator_weight": 0,
+  "encoder_weight": 1,
+  "decoder_weight": 20,
+  "with_discriminator": false,
+  "H": 256,
+  "W": 256,
+  "message_length": 64,
+  "lr": 1e-3,
+  "mask_weight": 0.5,
+  "noise_layers": [
+      "Combined([Identity(),JpegMask(50),JpegTest(50),GF(1,5),GN(0,0.1),MF(5),SP(0.1),Rotation(30)])"
+  ]
+}

@@ -1,0 +1,23 @@
+ {
+  "model_name": "ReDMark",
+  "project_name": "128x128",
+  "only_decoder": false,
+  "epoch_number": 101,
+  "batch_size": 16,
+  "train_continue": false,
+  "train_continue_path": "/",
+  "train_continue_epoch": 0,
+  "dataset_path": "datasets/",
+  "save_images_number": 4,
+  "discriminator_weight": 0,
+  "encoder_weight": 0.1,
+  "decoder_weight": 100,
+  "with_discriminator": false,
+  "H": 128,
+  "W": 128,
+  "message_length": 64,
+  "lr": 1e-4,
+  "noise_layers": [
+      "Combined([Identity(), Crop(0.8, 0.8), Cropout(0.7, 0.7), GF(1.0), GN(0.02), Jpeg(50)])"
+  ]
+}

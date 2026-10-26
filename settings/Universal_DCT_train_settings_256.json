@@ -1,0 +1,31 @@
+{
+  "model_name": "Universal_DCT",
+  "project_name": "256x256",
+  "only_decoder": false,
+  "epoch_number": 101,
+  "batch_size": 8,
+  "train_continue": false,
+  "train_continue_path": "/",
+  "train_continue_epoch": 0,
+  "dataset_path": "datasets/coco_s1",
+  "save_images_number": 4,
+  "discriminator_weight": 1.0,
+  "max_d_weight": 1.0,
+  "encoder_weight": 1.0,
+  "max_e_weight": 1.0,
+  "decoder_weight": 1.0,
+  "max_noise_intensity": 1.0,
+  "with_discriminator": true,
+  "use_curriculum": false,
+  "H": 256,
+  "W": 256,
+  "message_length": 64,
+  "lr": 0.001,
+  "use_lpips_loss": false,
+  "opt_discriminator_RMSprop": false,
+  "opt_lr": 0.001,
+  "use_WGAN": true,
+  "noise_layers": [
+      "Combined([Identity(),Warp(0.5),Rotation(45),Scaling(0.8),Crop(0.8, 0.8),GN(0.02),GF(1.0),JpegSS(50)])"
+  ]
+}

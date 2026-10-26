@@ -1,0 +1,23 @@
+{
+  "model_name": "HiDDeN",
+  "project_name": "256x256",
+  "only_decoder": false,
+  "epoch_number": 201,
+  "batch_size": 16,
+  "train_continue": false,
+  "train_continue_path": "/",
+  "train_continue_epoch": 0,
+  "dataset_path": "datasets/ImageNet_s2",
+  "save_images_number": 4,
+  "discriminator_weight": 0.001,
+  "encoder_weight": 0.7,
+  "decoder_weight": 1.0,
+  "with_discriminator": true,
+  "H": 256,
+  "W": 256,
+  "message_length": 64,
+  "lr": 1e-3,
+  "noise_layers": [
+      "Combined([Identity(), Dropout(0.3), Dropout(0.7), Cropout(0.27, 0.27), Cropout(0.45, 0.45), Crop(0.83, 0.83), Crop(0.55, 0.55), GF(2.0), GF(4.0), JpegMask(50), JpegSS(50)])"
+  ]
+}
